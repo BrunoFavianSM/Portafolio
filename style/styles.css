@@ -1,0 +1,328 @@
+/* Loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #141435, #1f052d);
+    background-size: 200% 200%, 200% 200%;
+    animation: gradientAnimation 6s linear infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 1s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 100%, 0% 0%;
+    }
+    100% {
+        background-position: 0% 0%, 100% 100%;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.loading-content {
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-link.active {
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Buttons*/
+.button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #0ea385;
+    color: #f8f8ff;
+    text-decoration: none;
+}
+
+.button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.button:hover span {
+    color: #000000;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.button::before {
+    content: "";
+    background: #006098;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #a5a5a51f;
+    backdrop-filter: blur(12px);
+    margin: 20px 70px 0 70px;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 20px;
+        margin: 10px 20px 0 20px;
+    }
+    .navbar-brand {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+}
+
+/* Habilidades cards */
+.habilidades-cardBG {
+    background-color: #23242f;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px 0 #2a323b;
+    width: 100%;
+    padding: 15px;
+    border: 0px solid #312e81;
+}
+
+.habilidades-card {
+    background-color: #2c2e3b;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    margin: 10px auto 30px auto;
+    padding: 10px;
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.habilidades-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.habilidades-card:hover {
+    box-shadow: 0 0 4px 2px #383595;
+}
+
+.habilidades-img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Formación */
+.formacion-card {
+    background-color: #2c2e3b;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    margin: 10px auto 30px auto;
+    padding: 10px;
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.formacion-img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.formacion-card:hover {
+    box-shadow: 0 0 4px 2px #383595;
+}
+
+/* Contacto */
+#contacto h2 a {
+    word-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.contacto-card {
+    background-color: #23242f;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #2a323b;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 35px;
+    border: 1px solid #312e81;
+}
+
+/* BG */
+.bg-sobreMi {
+    background-color: #1a1439;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-habilidades {
+    background-color: #0a192f;
+}
+
+.bg-otrasHabilidades {
+    background-color: #212a33;
+}
+
+.bg-formacion {
+    background-color: #0a192f;
+}
+
+.bg-proyectos {
+    background-color: #17212a;
+}
+
+.bg-inspiracion {
+    background-color: #10274a;
+}
+
+.bg-contacto {
+    background-color: #212a33;
+}
+
+.bg-contacto {
+    background-color: #0a192f;
+}
+
+.bg-presentacion {
+    background-color: #1a2f47;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%), url('../img/background3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Fonst */
+.custom-font {
+    font-family: 'Fira Code', monospace;
+}
+
+/* Others */
+body {
+    /* padding-top: 190px; */
+    background-color: #334155;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    scroll-margin-top: 1px;
+}
+
+footer {
+    background-color: #17212a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.title_color {
+    color: #16f2b3;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #11bf8d;
+    border-radius: 10px;
+}

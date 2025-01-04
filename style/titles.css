@@ -1,0 +1,68 @@
+/* Habilidades */
+.habilidades-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.habilidades-title::before,
+.habilidades-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #10b981;
+}
+
+.habilidades-title::before {
+    margin-right: 20px;
+}
+
+.habilidades-title::after {
+    margin-left: 20px;
+}
+
+/* Formacion */
+.formacion-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.formacion-title::before,
+.formacion-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #10b981;
+}
+
+.formacion-title::before {
+    margin-right: 20px;
+}
+
+.formacion-title::after {
+    margin-left: 20px;
+}
+
+/* Proyectos */
+.proyectos-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.proyectos-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #10b981;
+    margin-left: 20px;
+}

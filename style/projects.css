@@ -1,0 +1,139 @@
+/* Projects cards */
+.project-card {
+  background-color: #1b203e;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 #2a323b;
+  transition: 0.3s;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 60px 0 #303a45;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.section {
+  padding: 60px 0;
+  width: 100%;
+}
+
+/* Projects cards BG*/
+.project-cardBG {
+  background-color: #0d1724;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgb(42, 50, 59);
+  transition: 0.3s;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* Project BTN */
+.preview-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: linear-gradient(to right, #ea489b, #833be8);
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.preview-button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.preview-button:hover span {
+  color: #2c2c2c;
+}
+
+.preview-button::before,
+.preview-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.preview-button::before {
+  content: "";
+  background: linear-gradient(to right, #833be8, #662eb4);
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.preview-button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+/*Repo Btn*/
+.repo-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: linear-gradient(to right, #4535c1, #77e4c8);
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.repo-button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.repo-button:hover span {
+  color: #2c2c2c;
+}
+
+.repo-button::before,
+.repo-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.repo-button::before {
+  content: "";
+  background: #5db39d;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.repo-button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
