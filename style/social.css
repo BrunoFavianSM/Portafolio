@@ -87,3 +87,8 @@ ul {
 .example-2 .icon-content a[data-social="github"]~.tooltip {
     background-color: #24262a;
 }
+
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"]~.tooltip {
+    background-color: #32d951;
+}
