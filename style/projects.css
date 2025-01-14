@@ -21,6 +21,37 @@
   width: 100%;
 }
 
+/* Badges */
+.badge-html {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: #ef642a;
+}
+
+.badge-css {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: #399dd8;
+}
+
+.badge-js {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: #dac41b;
+}
+
+.badge-php {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: #a074c4;
+}
+
+.badge-sql {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: #f55385;
+}
+
 /* Projects cards BG*/
 .project-cardBG {
   background-color: #0d1724;
